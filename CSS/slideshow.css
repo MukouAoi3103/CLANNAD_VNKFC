@@ -1,0 +1,104 @@
+/* thiết lập style cho slideshow container */
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  margin: auto;
+  animation-name: start;
+  animation-duration: 3.5s;
+}
+/* ẩn hình ảnh cho phần tử slideshow */
+.mySlides {
+  display: none;
+}
+/* thiết kế nút mũi tên*/
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: 10%;
+  margin-top: -22px;
+  padding: 22px;
+  color: #905750;
+  font-weight: bold;
+  font-size: 100%;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* thiết kế nút mũi tên prev nằm phía bên trái */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* thiết kế nút mũi tên next nằm phía bên phải */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* thiết lập style  nút tròn điều khiển*/
+.dot {
+  cursor: pointer;
+  width:1.2vw;
+  height: 1.2vw;
+  margin: 0 10px;
+  background-color: #905750;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #52322e;
+}
+/* tạo hiệu ứng chuyển động fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-name: fade;
+  -moz-animation-duration: 0.5;
+  -o-animation-name: fade;
+  -o-animation-duration: 0.5;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
